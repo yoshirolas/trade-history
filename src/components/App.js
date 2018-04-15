@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import TableTradeHistory from '../containers/TableTradeHistory';
+import TradeHistory from '../containers/TradeHistory';
+import Orders from '../containers/Orders';
 
 class App extends Component {
   render() {
     return (
-      <TableTradeHistory/>
+      <div>
+        <Orders/>
+        <TradeHistory/>
+      </div>
     );
   }
 }
