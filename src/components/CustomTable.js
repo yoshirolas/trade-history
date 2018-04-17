@@ -16,20 +16,6 @@ const TableContainer = styled.div`
 `;
 
 class CustomTable extends Component {
-
-  // componentDidMount() {
-  //   this.props.dispatch(asyncGetUpdates);
-  // }
-
-  // shouldComponentUpdate(nextProps) {
-  //   if (this.props.data.length > 1) {
-  //     if (this.props.data[0].tradeID === nextProps.data[0].tradeID) {
-  //       return false;
-  //     }
-  //   }
-  //   return true;
-  // }
-
   render(){ 
     return (
       <TableContainer>

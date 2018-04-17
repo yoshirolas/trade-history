@@ -14,11 +14,17 @@ const tableHeader = [
 ];
 
 const TradeHistoryContainer = styled.section`
-  margin: 20px 0 20px 0;
+  margin: 5px;
+  padding-bottom: 30px;
+  margin: 20px 0;
   width: 100%;
   height: 400px;
   overflow: hidden;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+`;
+
+const Title = styled.h3`
+  margin: 5px 0 0 10px;
 `;
 
 class TradeHistory extends Component {
@@ -39,9 +45,9 @@ class TradeHistory extends Component {
   render(){ 
     return (
       <TradeHistoryContainer>
-        <h3>
+        <Title>
           Trade History
-        </h3>
+        </Title>
         <CustomTable
           header={tableHeader}
           data={this.props.data}
